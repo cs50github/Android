@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorBackgroundFloating"
+    tools:context="com.example.a1.pro1.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toppic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/topp"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/toppic"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:id="@+id/sidepic"
+        >
+
+        <ImageView
+            android:id="@+id/sidep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_below="@+id/toppic"
+    android:layout_toRightOf="@+id/sidepic"
+    android:layout_marginTop="90dp"
+    android:layout_marginLeft="30dp"
+    android:orientation="vertical"
+    android:id="@+id/details"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:id="@+id/date"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+         android:id="@+id/rate"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+android:id="@+id/votes"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+
+        android:background="@android:color/holo_green_dark"
+        android:text="Add to favourites"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:id="@+id/btn"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/sidepic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/para"
+        >
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/para"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light"
+        />
+
+</RelativeLayout>
+
+</ScrollView>
